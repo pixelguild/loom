@@ -9,6 +9,10 @@
   Persistent memory, intelligent archiving, cross-project patterns, peer LLM consultation, and a native macOS companion app.
 </p>
 
+<p align="center">
+  <a href="https://loom.pixelguild.com">loom.pixelguild.com</a>
+</p>
+
 ---
 
 ## What it does

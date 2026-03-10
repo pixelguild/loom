@@ -1,6 +1,6 @@
 {
   "name": "@pixelguild/loom",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Session intelligence layer for Claude Code — persistent memory, intelligent archiving, cross-project patterns, and peer LLM consultation.",
   "type": "module",
   "main": "dist/index.js",

@@ -6,6 +6,10 @@
 </p>
 
 <p align="center">
+  <a href="https://loom.pixelguild.com">loom.pixelguild.com</a>
+</p>
+
+<p align="center">
   <a href="https://www.npmjs.com/package/@pixelguild/loom"><img src="https://img.shields.io/npm/v/@pixelguild/loom?color=0a7bca&label=npm" alt="npm"></a>
   <a href="https://github.com/pixelguild/loom/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@pixelguild/loom?color=333" alt="license"></a>
   <a href="https://github.com/pixelguild/loom"><img src="https://img.shields.io/badge/github-pixelguild%2Floom-333?logo=github" alt="github"></a>
