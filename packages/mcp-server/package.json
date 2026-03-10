@@ -1,0 +1,54 @@
+{
+  "name": "@pixelguild/loom",
+  "version": "0.1.2",
+  "description": "Session intelligence layer for Claude Code — persistent memory, intelligent archiving, cross-project patterns, and peer LLM consultation.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "loom": "dist/cli/index.js"
+  },
+  "files": [
+    "dist",
+    "!dist/**/__tests__",
+    "README.md"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "session",
+    "context",
+    "archiving"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixelguild/loom.git",
+    "directory": "packages/mcp-server"
+  },
+  "author": "Pixel Guild, LLC",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "eslint src/",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.10.0",
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "better-sqlite3": "^12.6.2",
+    "openai": "^6.27.0",
+    "tiktoken": "^1.0.22",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.3.5",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}

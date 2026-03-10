@@ -1,0 +1,9 @@
+node_modules/
+dist/
+docs/
+.DS_Store
+.worktrees/
+.build/
+packages/menubar/
+CLAUDE.md
+.claude/
