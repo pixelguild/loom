@@ -18,7 +18,8 @@ Loom is an [MCP server](https://modelcontextprotocol.io) that gives Claude Code 
 ## Install
 
 ```bash
-npx @pixelguild/loom init
+npm install -g @pixelguild/loom
+loom init
 ```
 
 This scaffolds `docs/loom/`, wires the MCP server into `.claude/mcp.json`, and adds instructions to your `CLAUDE.md`. That's it.
@@ -26,7 +27,7 @@ This scaffolds `docs/loom/`, wires the MCP server into `.claude/mcp.json`, and a
 Or add manually:
 
 ```bash
-claude mcp add loom -- npx @pixelguild/loom
+claude mcp add loom -- loom
 ```
 
 ## What it does
@@ -77,8 +78,8 @@ The latest archive's carry-forward summary + current `context.md` always gives C
 ## CLI
 
 ```bash
-npx @pixelguild/loom init      # Scaffold project, wire MCP, inject CLAUDE.md
-npx @pixelguild/loom status    # Token count, archive status, context health
+loom init      # Scaffold project, wire MCP, inject CLAUDE.md
+loom status    # Token count, archive status, context health
 ```
 
 ## Configuration
@@ -119,7 +120,7 @@ The `loom_consult_peer` tool lets Claude ask a second LLM for architecture advic
 **OpenAI** — Set `LOOM_OPENAI_API_KEY` env var or pass it via MCP config:
 
 ```bash
-claude mcp add loom -e LOOM_PROJECT_ROOT=$(pwd) -e LOOM_OPENAI_API_KEY=sk-... -- npx @pixelguild/loom
+claude mcp add loom -e LOOM_PROJECT_ROOT=$(pwd) -e LOOM_OPENAI_API_KEY=sk-... -- loom
 ```
 
 ```json

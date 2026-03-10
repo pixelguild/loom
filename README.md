@@ -25,13 +25,10 @@
 
 ## Quick Start
 
-### 1. Build
+### 1. Install
 
 ```bash
-git clone https://github.com/pixelguild/loom.git
-cd loom
-npm install
-npm run build -w packages/mcp-server
+npm install -g @pixelguild/loom
 ```
 
 ### 2. Initialize a project
@@ -39,7 +36,7 @@ npm run build -w packages/mcp-server
 From the project you want Loom in:
 
 ```bash
-npx loom init
+loom init
 ```
 
 This will:
@@ -50,7 +47,7 @@ This will:
 Or manually add to any project:
 
 ```bash
-claude mcp add loom -e LOOM_PROJECT_ROOT=$(pwd) -- node /path/to/loom/packages/mcp-server/dist/index.js
+claude mcp add loom -- loom
 ```
 
 ### 3. Start working
@@ -64,7 +61,7 @@ Open a Claude Code session in your project. Claude will automatically:
 ### 4. Check status
 
 ```bash
-npx loom status
+loom status
 ```
 
 Shows token count, archive count, last entry, and whether archiving is needed.
@@ -204,7 +201,7 @@ Set the `LOOM_OPENAI_API_KEY` environment variable, then configure `~/.loom/conf
 You can pass the key via MCP config instead of a global env var:
 
 ```bash
-claude mcp add loom -e LOOM_PROJECT_ROOT=$(pwd) -e LOOM_OPENAI_API_KEY=sk-... -- npx @pixelguild/loom
+claude mcp add loom -e LOOM_PROJECT_ROOT=$(pwd) -e LOOM_OPENAI_API_KEY=sk-... -- loom
 ```
 
 **Vertex AI (Google Gemini)**
